@@ -9,10 +9,11 @@
 # This is free software, licensed under the MIT License.
 # See /LICENSE for more information.
 #
-
+sed -i "s/hostname='ImmortalWrt'/hostname='ZDM'/g" package/base-files/files/bin/config_generate
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+echo 'src-git istore https://github.com/linkease/istore;main' >>feeds.conf.default
